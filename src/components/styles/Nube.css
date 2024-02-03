@@ -1,0 +1,33 @@
+.loading__cloud {
+    width: 100%;
+    overflow: hidden;
+    
+}
+.cloud{
+    width: 120px;
+    height: 100px;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no repeat;
+    
+}
+.cloud:nth-child(1){
+    margin-top: 30px;
+    background-image: url('../../../solynube.png');
+    animation: movimiento2 8s infinite;
+    
+}
+.cloud:nth-child(2){
+    background-image: url(../../../solynube.png);
+    animation: movimiento1 10s infinite;
+}
+
+
+@keyframes movimiento1{
+    from {margin-left: 100%;}
+    to{margin-left: -30%;}
+}
+@keyframes movimiento2{
+    from {margin-left: -30%;}
+    to{margin-left: 100%;}
+}
